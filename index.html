@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <title>Brenda García's Portfolio</title>
+
+    <title>Brenda Garcia's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="description" content="Welcome to my Portfolio!">
     <meta name="author" content="Brenda Garcia">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<h1>Brenda García Ortega</h1>
-<section id="About">
-<h2>About</h2>
-<p>I'm a first year spanish linguistics master's student at UIUC. I have a linguistics & psychology degree from UCLA and a linguistics master's degree from CSUF. My main interests are in psycholinguistics, bilingualism, heritage languages and morphosyntax. My first programming experience was using HTML and CSS to design my myspace layout as a tween. My first programming language course was learning C++, which I took as a requirement for my cognitive science minor at UCLA. Since then, I've also learned python to make research data organization easier to manage. Before CTD, I also dabbled in Ruby and JavaScript because I really wanted to build Tumblr and Discord bots. I am also currently learning R. With my coding experience, I hope to explore the ways in which technology can aid in linguistic research analysis. </p>
-</section>
-<section id="Experience">
-<h2>Experience</h2>
-<ul>
-    <li>UCLA - Introductory C++</li>
-    <li>RCC - Introductory Python</li>
-    <li>Self-taught basic knowledge: HTML, CSS, Ruby & Javascript</li>
-</ul>
-</section>
-<section id="Connect">
-<h2>Connect</h2>
-<ul>
-<li><a href="https://github.com/bgarciaort" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-<li><a href="https://www.linkedin.com/in/bgarcia118/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-<li><a href="https://spanport.illinois.edu/directory/profile/brendag4" 
-    target="_blank" rel="noopener noreferrer">UIUC Profile</a></li>
-</ul>
-</section>
+  <header>
+  <h1>Brenda García Ortega</h1>
+  </header>
+  <main>
+    <div class = "about" id="myAbout">
+      <h2>About</h2>
+      <p>I'm a second year spanish linguistics master's student at UIUC. I have a linguistics & psychology degree from UCLA and a linguistics master's degree from CSUF. My main interests are in psycholinguistics, bilingualism, heritage languages and morphosyntax. </p>
+    </div>
+    <div class = "experience" id="myExperience">
+      <h2>Experience</h2>
+        <!-- Experience entry 1 -->
+        <div class="exp-container">
+          <div class="title-font">
+             <p class="exp-title">Introductory C++ | UCLA</p>
+          </div>
+          <div class="exp-description">
+          <ul>
+          <li>Requirement for a cognitive Science Minor.</li>
+          </ul>  
+          </div>
+        </div>
+          <!-- Experience entry 2 -->
+        <div class="exp-container">
+          <div class="title-font">
+             <p class="exp-title">Introductory Python | Riverside City College (RCC)</p>
+          </div>
+          <div class="exp-description">
+          <ul>
+          <li>Took course to begin building a foundation for linguistic stats analysis.</li>
+          </ul>  
+        </div>
+        </div>
+                  <!-- Experience entry 3 -->
+        <div class="exp-container">
+          <div class="title-font">
+             <p class="exp-title">R & R Studio | UIUC</p>
+          </div>
+          <div class="exp-description">
+          <ul>
+          <li>Self-taught myself the basics, currently taking class to build stronger foundation.</li>
+          </ul>
+        </div>
+        </div>
+          <!-- Experience entry 4 -->
+        <div class="exp-container">
+          <div class="title-font">
+             <p class="exp-title">HTML, CSS, Javascript & Ruby</p>
+          </div>
+          <div class="exp-description">
+          <ul>
+          <li>Self-taught myself the basics.</li>
+          </ul>
+        </div>
+        </div>
+    </div>
+     <!-- Connect Links -->
+    <footer>
+    <div class = "connect" id="myConnect">
+      <h3>Connect:</h3>
+      <h3>
+        <a href="https://github.com/bgarciaort" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/bgarcia118/" class="fa fa-linkedin"></a>
+        <a href="mailto:brendag4@illinois.edu" class="fa fa-envelope"></a>
+      </h3>
+    </div>
+    </footer>
+  </main>
 </body>
 </html>

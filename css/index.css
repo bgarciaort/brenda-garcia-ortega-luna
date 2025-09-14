@@ -14,6 +14,28 @@ body {
     font-size: 30px;
     border-bottom: 5px solid rgb(236, 173, 102);
   }
+
+.navbar {
+  background-color: rgb(250, 245, 242);
+  font-size: 20px;
+  font-weight: bold;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+
+  .navbar a {
+  color: rgb(236, 173, 102);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  }
+
+  .navbar a:hover {
+  background-color: rgb(236, 173, 102);
+  color: rgb(250, 245, 242);
+  }
+
 div {
   background-color: rgb(250, 245, 242);
   color:rgb(172, 19, 42);
@@ -73,6 +95,17 @@ div {
 	  left: 0;
     color: rgb(236, 173, 102);
   }
+
+  .skills {
+  text-align: center;
+  margin:40px;
+  border: 5px solid rgb(236, 173, 102);
+}
+.projects {
+  text-align: center;
+  margin:40px;
+  border: 5px solid rgb(236, 173, 102);
+}
 
  ul  {
     list-style: none;

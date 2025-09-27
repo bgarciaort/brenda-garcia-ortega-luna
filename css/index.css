@@ -11,7 +11,7 @@ body {
     color:rgb(84, 10, 21);
     text-align: center;
     padding: 5px 0;
-    font-size: 30px;
+    font-size: 25px;
     border-bottom: 5px solid rgb(236, 173, 102);
   }
 
@@ -26,7 +26,7 @@ body {
 
   .navbar a {
   color: rgb(236, 173, 102);
-  padding: 15px 15px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   }
@@ -36,18 +36,37 @@ body {
   color: rgb(250, 245, 242);
   }
 
+/*title colors & box spaces */  
 div {
-  background-color: rgb(250, 245, 242);
   color:rgb(172, 19, 42);
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
   }
 
-.about {
-  text-align: center;
-  margin:40px;
-  border: 5px solid rgb(236, 173, 102);
+/* column container */
+.column {  
+  background-color: rgb(84, 10, 21);
+  display: flex;
+  
 }
+
+/* sidebar column */
+.about {
+  flex: 30%;
+  margin: 20px;
+  text-align: center;
+  background-color: rgb(250, 245, 242);
+  border: 5px solid rgb(236, 173, 102);
+  padding: 5px;
+}
+
+/* sidebar image */
+img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
  .about p { 
   font-family: Gill Sans, sans-serif;
   font-size: 18px;
@@ -57,10 +76,17 @@ div {
   padding: 20px;
     } 
 
-.experience {
+.main-column {  
+  flex-wrap: wrap;
+  margin: auto;
+}
+.experience, .skills, .projects {
   text-align: center;
-  margin:40px;
+  margin: 20px;
+  background-color: rgb(250, 245, 242);
   border: 5px solid rgb(236, 173, 102);
+  flex: 70%;
+  padding: 5px;
 }
 
 .exp-container {
@@ -95,17 +121,6 @@ div {
 	  left: 0;
     color: rgb(236, 173, 102);
   }
-
-  .skills {
-  text-align: center;
-  margin:40px;
-  border: 5px solid rgb(236, 173, 102);
-}
-.projects {
-  text-align: center;
-  margin:40px;
-  border: 5px solid rgb(236, 173, 102);
-}
 
  ul  {
     list-style: none;
@@ -147,4 +162,48 @@ footer {
 }                                              
 .fa:active {
   color: rgb(172, 19, 42);
+}
+
+/** media queries**/ 
+
+/*standard tablet*/
+
+@media screen and (max-width: 768px){
+body{
+  font-size: 100%;
+  background-color:rgb(58,	13,	35);
+} 
+header, .navbar{
+  font-size: 100%;
+}
+.column{
+  flex-wrap: wrap;
+  background-color:rgb(58,	13,	35);
+} 
+.about p, .exp-container, ul {
+  flex-direction: column;
+  font-size: 100%;
+  } 
+}
+
+/*phones and smaller screens*/
+
+@media screen and (max-width: 500px){
+body {
+  font-size: 100%;
+  }
+header{
+  font-size: 100%;
+  color:rgb(236, 173, 102);
+  }
+.navbar, .about p, .exp-container, ul {
+  flex-direction: column;
+  font-size: 100%;
+  } 
+.navbar a {
+  color:rgb(116,	27,	71);
+  }
+.navbar a:hover {
+  background-color:rgb(116,	27,	71);
+  }
 }

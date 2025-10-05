@@ -80,7 +80,7 @@ img {
   flex-wrap: wrap;
   margin: auto;
 }
-.experience, .skills, .projects {
+.experience, .projects {
   text-align: center;
   margin: 20px;
   background-color: rgb(250, 245, 242);
@@ -121,6 +121,16 @@ img {
 	  left: 0;
     color: rgb(236, 173, 102);
   }
+
+
+#skills {
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(250, 245, 242);
+  border: 5px solid rgb(236, 173, 102);
+  flex: 70%;
+  padding: 5px;
+}
 
  ul  {
     list-style: none;
@@ -196,10 +206,16 @@ header{
   font-size: 100%;
   color:rgb(236, 173, 102);
   }
-.navbar, .about p, .exp-container, ul {
+.navbar, .about p, ul, ul li:before {
   flex-direction: column;
   font-size: 100%;
   } 
+
+  .exp-title, .exp-description, .exp-description ul, .exp-description ul li:before {
+  flex-direction: column;
+  font-size: 100%;
+  } 
+
 .navbar a {
   color:rgb(116,	27,	71);
   }

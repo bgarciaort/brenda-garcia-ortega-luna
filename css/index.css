@@ -94,7 +94,7 @@ img {
   padding: 1px;
   font-size: 18px;
 }
-.title-font {
+.title-font, label {
   color:rgb(84, 10, 21);
 }
 .exp-title {
@@ -132,7 +132,36 @@ img {
   padding: 5px;
 }
 
- ul  {
+/** message section**/
+
+section:not([class]){
+  color:rgb(172, 19, 42);
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(250, 245, 242);
+  border: 5px solid rgb(236, 173, 102);
+  flex: 70%;
+  padding: 5px;
+}
+
+#messages {
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(250, 245, 242);
+  border: 5px double rgb(236, 173, 102);
+  flex: 70%;
+  padding: 5px;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+/** in case there's no messages **/
+
+#messages:has(#messageList:empty) {
+  display: none;
+}
+
+ ul {
     list-style: none;
     position: relative;
     margin-left: 20px;
@@ -167,10 +196,10 @@ footer {
 .fa:visited {
   color: rgb(84, 10, 21);
 }
-.fa:hover {
+.fa:hover{
   color: rgb(236, 173, 102);
 }                                              
-.fa:active {
+.fa:active, ul a {
   color: rgb(172, 19, 42);
 }
 
@@ -190,7 +219,7 @@ header, .navbar{
   flex-wrap: wrap;
   background-color:rgb(58,	13,	35);
 } 
-.about p, .exp-container, ul {
+.about p, .exp-container, ul, section:not([class]), .messages {
   flex-direction: column;
   font-size: 100%;
   } 
@@ -211,7 +240,7 @@ header{
   font-size: 100%;
   } 
 
-  .exp-title, .exp-description, .exp-description ul, .exp-description ul li:before {
+  .exp-title, .exp-description, .exp-description ul, .exp-description ul li:before,  section:not([class]), .messages {
   flex-direction: column;
   font-size: 100%;
   } 

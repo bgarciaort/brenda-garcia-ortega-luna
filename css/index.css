@@ -196,10 +196,10 @@ footer {
 .fa:visited {
   color: rgb(84, 10, 21);
 }
-.fa:hover{
+.fa:hover, #myProjects a:hover{
   color: rgb(236, 173, 102);
 }                                              
-.fa:active, ul a {
+.fa:active, ul a, #myProjects a {
   color: rgb(172, 19, 42);
 }
 

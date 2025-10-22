@@ -55,7 +55,7 @@ messageList.appendChild(newMessage);
 event.target.reset();
 });
 
-  /** Fetch Stuff */
+/** Fetch Stuff */
 
 fetch('https://api.github.com/users/bgarciaort/repos')  
    .then(response => {
@@ -64,6 +64,7 @@ fetch('https://api.github.com/users/bgarciaort/repos')
     }
     return response.json(); 
   })
+
   .then(data => {
     const repositories = data;
     console.log(repositories); 
@@ -72,10 +73,15 @@ fetch('https://api.github.com/users/bgarciaort/repos')
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement('li'); 
-      project.innerText = repositories[i].name; 
+      const link = document.createElement('a');
+      link.href = repositories[i].html_url;  
+      link.textContent = repositories[i].name;  
+      link.target = "_blank";  
+      project.appendChild(link);
       projectList.appendChild(project); 
     }
   })
+
   .catch(error => {
     console.error('An error occurred:', error);
     const projectSection = document.getElementById('myProjects');
